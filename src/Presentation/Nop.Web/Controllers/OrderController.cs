@@ -77,7 +77,7 @@ namespace Nop.Web.Controllers
             return View(model);
         }
 
-        //My account / Orders / Cancel recurring order
+        //My account / Orders / Cancel recurring orderr
         [HttpPost, ActionName("CustomerOrders")]
         [FormValueRequired(FormValueRequirement.StartsWith, "cancelRecurringPayment")]
         public virtual async Task<IActionResult> CancelRecurringPayment(IFormCollection form)
